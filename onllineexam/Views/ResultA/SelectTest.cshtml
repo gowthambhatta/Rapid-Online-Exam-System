@@ -1,0 +1,74 @@
+﻿@model onllineexam.Models.DrpList
+
+@{
+
+    ViewBag.Title = "SelectTest";
+    if (Session["sid"] != null)
+    {
+        Layout = "~/Views/Shared/_StudentLayout.cshtml";
+    }
+    else
+    {
+        Layout = "~/Views/Shared/_TeacherLayout.cshtml";
+    }
+
+}
+<div class="col-md-6">
+    @if (Session["sid"] != null)
+    {
+        using (Html.BeginForm("Result_By_Stuandtest", "ResultA"))
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-horizontal">
+
+                <hr />
+                @Html.ValidationSummary(true)
+                @Html.HiddenFor(m => m.QuestionNo, 1)
+                <div class="form-group">
+                    @Html.Label("Exam Name", new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @*@Html.DropDownList("item1", ViewBag.name as SelectList, "Select Exam")*@
+                        @Html.DropDownListFor(m => m.examid, new SelectList(Model.Examlist, "Test_id", "Test_name"), "Select Exam", new { @class = "col-md-5", style = "height:40px;" })
+                        @Html.ValidationMessageFor(model => model.exam_title)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Select Exam" class="btn btn-default" />
+                    </div>
+                </div>
+            </div>
+        }
+
+    }
+    else
+    {
+        using (Html.BeginForm("Result_By_Test", "ResultA"))
+        { @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+
+            <hr />
+            @Html.ValidationSummary(true)
+            @Html.HiddenFor(m => m.QuestionNo, 1)
+            <div class="form-group">
+                @Html.Label("Exam Name", new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @*@Html.DropDownList("item1", ViewBag.name as SelectList, "Select Exam")*@
+                    @Html.DropDownListFor(m => m.examid, new SelectList(Model.Examlist, "Test_id", "Test_name"), "Select Exam", new { @class = "col-md-5", style = "height:40px;" })
+                    @Html.ValidationMessageFor(model => model.exam_title)
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Select Exam" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+    }
+
+}
+
+</div>
+    

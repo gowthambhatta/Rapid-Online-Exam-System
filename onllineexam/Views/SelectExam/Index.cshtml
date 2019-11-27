@@ -1,7 +1,6 @@
 ﻿@model onllineexam.Models.DrpList
 @{
-    ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+   
 }
 <h2>Select Exam</h2>
 <div class="col-md-6">
@@ -18,7 +17,7 @@
                 @Html.Label("Exam Name", new { @class = "control-label col-md-2" })
                 <div class="col-md-10">
                     @*@Html.DropDownList("item1", ViewBag.name as SelectList, "Select Exam")*@
-                    @Html.DropDownListFor(m => m.examid,new SelectList(Model.Examlist, "Test_id", "Test_name"), "Select Exam")
+                    @Html.DropDownListFor(m => m.examid,new SelectList(Model.Examlist, "Test_id", "Test_name"), "Select Exam", new { @class = "col-md-5", style = "height:40px;" })
                     @Html.ValidationMessageFor(model => model.exam_title)
                 </div>
             </div>
@@ -38,9 +37,9 @@
         <ul>
             <li>For each question you have only 1 minute.</li>
             <br>
-            <li>If you want you can pass any any question</li>
+            <li>If you want you can pass any question</li>
             <br>
-            <li>For each coorect anser you have 1 point</li>
+            <li>For each correct answer you have 1 point</li>
         </ul>
     </h3>
 </div>

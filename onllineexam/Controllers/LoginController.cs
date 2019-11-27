@@ -115,10 +115,10 @@ namespace onllineexam.Controllers
                     if (User_type == "Student")
                     {
                         var email_id = (from e in db.Students
-                                        where e.Stu_Email == log.email
+                                        where e.Stu_Email == log.email 
                                         select e.Stu_Email).SingleOrDefault();
                         var logmail = (from e in db.Logins
-                                       where e.Email == log.email && e.Password == log.pass
+                                       where e.Email == log.email && e.Password == log.pass &&log.Type==e.Type
                                        select e.Email).SingleOrDefault();
 
 
@@ -147,9 +147,8 @@ namespace onllineexam.Controllers
                         var email_id = (from e in db.Teachers
                                         where e.Teach_Email == log.email
                                         select e.Teach_Email).SingleOrDefault();
-
                         var logmail = (from e in db.Logins
-                                       where e.Email == log.email && e.Password == log.pass
+                                       where e.Email == log.email && e.Password == log.pass && log.Type == e.Type
                                        select e.Email).SingleOrDefault();
                         if (logmail == null)
                         {

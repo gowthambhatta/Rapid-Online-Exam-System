@@ -1,27 +1,60 @@
 ﻿@{
     Layout = "~/Views/Shared/_TeacherLayout.cshtml";
-}<h2>Upload</h2>
-
-@Session["exid"]
-@using (Html.BeginForm("Upload", "Upload", FormMethod.Post, new
+}<h2>Upload Test File(in Excel Format)</h2>
+@if (TempData["uploadstatus"].Equals("false"))
 {
-    enctype = "multipart/form-data"
-}))
-{
-    <div>
-        <input type="file" name="UploadedFile" />
+    using (Html.BeginForm("Upload", "Upload", FormMethod.Post, new
+    {
+        enctype = "multipart/form-data"
+    }))
+    {
+        <div class="fa-align-center">
+            <input class="btn-primary" type="file" name="UploadedFile" />
+        </div><br />
+        <div>
+            <span>File:</span>
+            <span><input class="btn-primary" type="submit" name="Submit" value="Submit" /></span>
+        </div>
+    }
+    <br />
+    <br />
+    <h3>Excel File Must have this column Name</h3>
+    <div class="col-md-3">
+        <table border="1" class=" table table-hover table-striped">
+            <tr>
+                <td>testid</td>
+                <td>Question_number</td>
+                <td>Question </td>
+                <td>option1</td>
+                <td>option2</td>
+                <td>option3</td>
+                <td>option4</td>
+                <td>correct_option</td>
+                <td>Level</td>
+                <td>Description</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp; </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp; </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp; </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+        <h5>Please enter Question Number Sequentially</h5>
+        <h6>Test Id is assigned Automatically, please leave that column blank</h6>
     </div>
-    <table>
-        <tr>
-            <td>File:</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <input type="submit"
-                       name="Submit"
-                       value="Submit" />
-            </td>
-        </tr>
-    </table>
+}
+else if (TempData["uploadstatus"].Equals("true"))
+{
+
+    <div class="alert-success">
+        <h1>Uploaded Successfully!</h1><br />
+        <h6></h6>
+    </div>
 }

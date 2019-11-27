@@ -193,6 +193,7 @@
     <Compile Include="Controllers\SelectExamController.cs" />
     <Compile Include="Controllers\ShowQuestionController.cs" />
     <Compile Include="Controllers\StudentAcessController.cs" />
+    <Compile Include="Controllers\StudentsController.cs" />
     <Compile Include="Controllers\TeacherAccessController.cs" />
     <Compile Include="Controllers\UploadController.cs" />
     <Compile Include="Global.asax.cs">
@@ -400,7 +401,6 @@
     <Content Include="Views\Question\Edit.cshtml" />
     <Content Include="Views\Question\Index.cshtml" />
     <Content Include="Views\SelectExam\Index.cshtml" />
-    <Content Include="Views\ShowQuestion\NextQuestion.cshtml" />
     <Content Include="Views\Results\Create.cshtml" />
     <Content Include="Views\Results\Delete.cshtml" />
     <Content Include="Views\Results\Details.cshtml" />
@@ -442,6 +442,16 @@
     <Content Include="Views\Login\Stu_Registration.cshtml" />
     <Content Include="Views\Login\Teach_Registration.cshtml" />
     <Content Include="Views\Login\ForgotPassword.cshtml" />
+    <Content Include="Views\Upload\.cshtml" />
+    <Content Include="Views\ResultA\SelectTest.cshtml" />
+    <Content Include="Views\ResultA\Result_By_Test1.cshtml" />
+    <Content Include="Views\ResultA\SelectExam1.cshtml" />
+    <Content Include="Views\ShowQuestion\NextQuestion.cshtml" />
+    <Content Include="Views\Students\Create.cshtml" />
+    <Content Include="Views\Students\Delete.cshtml" />
+    <Content Include="Views\Students\Details.cshtml" />
+    <Content Include="Views\Students\Edit.cshtml" />
+    <Content Include="Views\Students\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,5 +1,6 @@
 ﻿ using System;
 using System.Collections.Generic;
+using System.Data.Entity.Core.Objects;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -12,6 +13,7 @@ namespace onllineexam.Controllers
     {
 
         static int count = 0;
+        [HandleError]
         public ActionResult Index()
         {
             return View();
@@ -19,6 +21,7 @@ namespace onllineexam.Controllers
         // GET: ShowQuestion
         OnlineExamEntities db = new OnlineExamEntities();
         [HttpPost]
+        [HandleError]
         public ActionResult Index(DrpList drp)
         {
 
@@ -26,15 +29,31 @@ namespace onllineexam.Controllers
             ViewBag.questionNo = drp.QuestionNo;
             TempData["a"] = drp.QuestionNo;
             
-            Session["subid"] = 505;
+           
 
             if (drp.QuestionNo == 1)
-            //if (questionNo == null || id == null)
             {
                 Session["exid"] = drp.examid;
-                //Session["level1"] = db.MaximumQuestnNumINLevel(drp.examid, 1);
-                //Session["level2"] = db.NumOfQuestByLevel((int)Session["exid"], 2);
-                //Session["level3"] = db.NumOfQuestByLevel((int)Session["exid"], 3);
+                //var sub = db.TestGenerators.Find(drp.examid).sub_id.First().ToString();
+                Session["subid"] = 505;
+                //var levelq1= db.MaximumQuestnNumINLevel(drp.examid, 1);
+
+
+                var levelq1 = (from e in db.QuestionDatas
+                                    where e.testid==drp.examid && e.Level.Equals("1")
+                                    orderby e.Question_number descending
+                                    select e.Question_number).Take(1).First();
+                Session["level1"] = levelq1;
+                var levelq2 = (from e in db.QuestionDatas
+                               where e.testid == drp.examid && e.Level.Equals("2")
+                               orderby e.Question_number descending
+                               select e.Question_number).Take(1).First();
+                Session["level2"] = levelq2;
+                var levelq3 = (from e in db.QuestionDatas
+                               where e.testid == drp.examid && e.Level.Equals("3")
+                               orderby e.Question_number descending
+                               select e.Question_number).Take(1).First();
+                Session["level3"] = levelq3;
                 QuestionData SingleQuestion = db.QuestionDatas.SingleOrDefault(m => m.Question_number == 1 && m.testid == drp.examid);
 
 
@@ -62,7 +81,7 @@ namespace onllineexam.Controllers
 
 
         int add = 0;
-
+        [HandleError]
         public ActionResult Next(QuestionData aaa)
         {
             int qId = (int)aaa.Question_number + 1;
@@ -73,7 +92,7 @@ namespace onllineexam.Controllers
             return RedirectToAction("NextQuestion");
         }
 
-
+        [HandleError]
         public ActionResult NextQuestion()
         {
             int qNo = Convert.ToInt32(TempData["a"]);
@@ -85,6 +104,7 @@ namespace onllineexam.Controllers
 
         }
         [HttpPost]
+        [HandleError]
         public ActionResult NextQuestion(QuestionData aaa)
         {
             int level = Convert.ToInt32(aaa.Level);
@@ -99,9 +119,9 @@ namespace onllineexam.Controllers
             count++;
             if (level == 1)
             {
-                //var levelone = Session["level1"];
-                // int? level1 = Convert.ToInt32(levelone);
-                if (aaa.Question_number == 2)
+                var levelone = Session["level1"];
+                int? level1 = Convert.ToInt32(levelone);
+                if (aaa.Question_number == level1)
                 {
                     float percent = ((int)Session["correctAns"] * 100) / count;
                     if (percent >= 65)
@@ -139,8 +159,9 @@ namespace onllineexam.Controllers
             }
             else if (level == 2)
             {
-                //int level2 = (int)Session["level2"];
-                if (aaa.Question_number == 4)
+                var leveltwo = Session["level2"];
+                int? level2 = Convert.ToInt32(leveltwo);
+                if (aaa.Question_number == level2)
                 {
                     float percent = ((int)Session["correctAns"] * 100) / count;
                     if (percent >= 65)
@@ -177,8 +198,9 @@ namespace onllineexam.Controllers
             }
             else if (level == 3)
             {
-                //int level3 = (int)Session["level3"];
-                if (aaa.Question_number == 6)
+                var levelthree = Session["level3"];
+                int? level3 = Convert.ToInt32(levelthree);
+                if (aaa.Question_number == level3)
                 {
                     float percent = ((int)Session["correctAns"] * 100) / count;
                     if (percent >= 65)

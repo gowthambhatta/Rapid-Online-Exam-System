@@ -13,7 +13,8 @@
     @Scripts.Render("~/bundles/modernizr")
     <link href="~/Content/Site.css" rel="stylesheet" />
 </head>
-<body style="background-color:khaki">
+<body style="background-color:#d1dae8">
+
     <header style="background-color:transparent;float:left;" id="header">
         <div style="background-color:white; " class="container">
             <div id="logo" class="pull-left">
@@ -31,22 +32,20 @@
                     <li>
                         <h4 style="color:white;"> &nbsp; &nbsp; Hello @Session["login"] !</h4>
                     </li>
+                    
                     <li style="color:beige;">
-                        @Html.ActionLink("View Report", "CreateTest", "AddExam")
+                        @Html.ActionLink("Update Information", "Edit", "Students")
+                    </li>
+                    <li style="color:beige;">
+                        <a href="#">View Report<span class="badge">Will Be Updated Soon</span></a><br>
 
                     </li>
-                    <li style="color:beige;">
-                        @Html.ActionLink("Update Information", "Index", "QuestionView")
+                    <li>
+                        <a href="#">Report By Subject<span class="badge">Will Be Updated Soon</span></a><br>
                     </li>
                     <li>
-                        @Html.ActionLink("Report By Subject", "Result_By_Stuandsub1", "ResultA")
-                    </li>
-                    <li>
-                        @Html.ActionLink("Report By Subject", "Result_By_Stuandsub1", "ResultA")
-                    </li>
-                    <li>
-                        @Html.ActionLink("Report By Test", "Result_By_Stuandtest", "ResultA")
-                    </li>
+                        <a href="#">Report By Test<span class="badge">Will Be Updated Soon</span></a><br>
+                   </li>
                     <li>
                         @Html.ActionLink("Log Off", "LogOff", "Login")
                     </li>
@@ -59,17 +58,14 @@
     </div>
     @RenderBody()
     <hr />
-    <footer id="footer">
+    <footer >
         <div class="container">
 
             <div class="col-md-12">
                 <div class="copyright">
                     &copy; Copyright <strong>Rapid </strong>
                 </div>
-                <div class="credits">
-
-                    Designed by <a href="https://lti.com/">Team 3 LTI </a>
-                </div>
+                
             </div>
 
         </div>

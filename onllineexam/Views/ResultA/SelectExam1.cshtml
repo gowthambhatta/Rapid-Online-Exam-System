@@ -1,10 +1,10 @@
-﻿@{
-    Layout = "~/Views/Shared/_TeacherLayout.cshtml";
+﻿@model onllineexam.Models.DrpList
+@{
+    ViewBag.Title = "SelectTest";
+    Layout = "~/Views/Shared/_StudentLayout.cshtml";
 }
-@model onllineexam.Models.DrpList
-<h2>Select Exam</h2>
-<div class="col-md-5 col-sm-6">
-    @using (Html.BeginForm("Index", "Upload"))
+<div class="col-md-6">
+    @using (Html.BeginForm("Result_By_Stuandtest", "ResultA"))
     {
         @Html.AntiForgeryToken()
 
@@ -18,19 +18,14 @@
                 <div class="col-md-10">
                     @*@Html.DropDownList("item1", ViewBag.name as SelectList, "Select Exam")*@
                     @Html.DropDownListFor(m => m.examid, new SelectList(Model.Examlist, "Test_id", "Test_name"), "Select Exam", new { @class = "col-md-5", style = "height:40px;" })
-
                     @Html.ValidationMessageFor(model => model.exam_title)
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-md-offset-2 col-md-10">
-                    <input type="submit" value="Create Exam" class="btn btn-default" />
+                    <input type="submit" value="Select Exam" class="btn btn-default" />
                 </div>
             </div>
         </div>
     }
 </div>
-<br>
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-}

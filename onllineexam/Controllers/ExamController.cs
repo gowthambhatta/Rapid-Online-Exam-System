@@ -16,6 +16,7 @@ namespace onllineexam.Controllers
         private OnlineExamEntities db = new OnlineExamEntities();
 
         // GET: Exam
+        [HandleError]
         public ActionResult Index()
         {
             var testGenerators = db.TestGenerators.Include(t => t.Subject).Include(t => t.Teacher).Include(t => t.QuestionFile);
@@ -23,6 +24,7 @@ namespace onllineexam.Controllers
         }
 
         // GET: Exam/Details/5
+        [HandleError]
         public ActionResult Details(int? id)
         {
             if (id == null)

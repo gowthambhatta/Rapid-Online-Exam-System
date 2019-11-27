@@ -13,7 +13,8 @@
     @Scripts.Render("~/bundles/modernizr")
     <link href="~/Content/Site.css" rel="stylesheet" />
 </head>
-<body style="background-color:khaki">
+<body style="background-color:#d1dae8">
+
     <header style="background-color:transparent;float:left;" id="header">
         <div style="background-color:white; " class="container">
             <div id="logo" class="pull-left">
@@ -26,7 +27,7 @@
     <div style="background-color:#111;height:500px; overflow: auto;" class="col-sm-3 col-md-3 container-fluid">
         <div class="row-fluid row content">
             <div class="sidenav">
-                
+
                 <ul style="color:beige;" class=" nav nav-pills nav-stacked">
                     <li>
                         <h4 style="color:white;"> &nbsp; &nbsp; Hello @Session["login"] !</h4>
@@ -41,14 +42,16 @@
                     <li style="color:beige;">
                         @Html.ActionLink("Upload Question For Existing Test", "SelectTest", "AddExam")
                     </li>
+
                     <li>
-                        @Html.ActionLink("Report By Student", "Result_By_Stuandtest", "ResultA")
+                        @Html.ActionLink("Report By Test", "SelectTest", "ResultA")
+                    </li>
+
+                    <li>
+                        <a href="#">Report By Student<span class="badge">Will Be Updated Soon</span></a><br>
                     </li>
                     <li>
-                        @Html.ActionLink("Report By Test", "Result_By_Test", "ResultA")
-                    </li>
-                    <li>
-                        @Html.ActionLink("Report By Subject", "Result_By_Subject1", "ResultA")
+                        <a href="#">Report By Subject<span class="badge">Will Be Updated Soon</span></a><br>
                     </li>
                     <li>
                         @Html.ActionLink("Log Off", "LogOff", "Login")
@@ -60,8 +63,10 @@
             </div>
         </div>
     </div>
-    @RenderBody()
-    <hr />
+    <div class="col-md-9 col-sm-6">
+        @RenderBody()
+    </div>
+
     <footer id="footer">
         <div class="container">
 

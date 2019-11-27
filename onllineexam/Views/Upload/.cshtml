@@ -1,0 +1,14 @@
+﻿@{
+    Layout = "~/Views/Shared/_TeacherLayout.cshtml";
+}<h2>Upload Test File(in Excel Format)</h2>
+
+@if (TempData["uploadstatus"].Equals("true"))
+{
+    <h2>Upload Test File(in Excel Format)</h2>
+    <div class="alert-success">
+        <h1>Uploaded Successfully!</h1><br />
+        <h6></h6>
+    </div>
+}
+
+

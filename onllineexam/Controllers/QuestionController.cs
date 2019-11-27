@@ -16,11 +16,13 @@ namespace onllineexam.Controllers
         private OnlineExamEntities db = new OnlineExamEntities();
 
         // GET: Question
-        public ActionResult Index()
+        public ActionResult Index(DrpList drp)
         {
-            int testid = Convert.ToInt32(Session["testid"]);
+            ViewBag.drpData = drp;
+            Session["exid"] = drp.examid;
+            int testid = Convert.ToInt32(Session["exid"]);
             var questionDatas = (from q in db.QuestionDatas
-                                where q.testid == 1000
+                                where q.testid == testid
                                  select q).ToList();
 
             return View(questionDatas.ToList());
@@ -53,17 +55,24 @@ namespace onllineexam.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "testid,Question_number,Question,option1,option2,option3,option4,correct_option,Level,Description")] QuestionData questionData)
+        public ActionResult Create([Bind(Include = "Question,option1,option2,option3,option4,correct_option,Level,Description")] QuestionData questionData)
         {
+            int testid = (int)Session["exid"];
             if (ModelState.IsValid)
             {
+                questionData.testid = (int)Session["exid"];
+                questionData.Question_number = ((from e
+                                                in db.QuestionDatas
+                                                where e.testid == testid
+                                                orderby e.Question_number descending
+                                                select e.Question_number).Take(1).First())+1;
                 db.QuestionDatas.Add(questionData);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
             ViewBag.testid = new SelectList(db.TestGenerators, "Test_id", "Test_name", questionData.testid);
-            return View(questionData);
+            return RedirectToAction("Index");
         }
 
         // GET: Question/Edit/5

@@ -3,15 +3,12 @@
 <h2>Result By Test</h2>
 @{
     ViewBag.Title = "Result";
-    Layout = "~/Views/Shared/_TeacherLayout.cshtml";
+    Layout = null;
 }
 @*<p>
         @Html.ActionLink("Create New", "Create")
     </p>*@
-@*<p>
-        @Html.ActionLink("Convert View To PDF", "PrintViewToPdf")
-    </p>*@
-<div class="col-md-5">
+
 <table border="1" class="table table-responsive table-hover table-striped ">
     <tr>
         <th>
@@ -53,7 +50,7 @@
         <th>
             @Html.DisplayNameFor(model => model.Status)
         </th>
-      
+        
     </tr>
 
     @foreach (var item in Model)
@@ -111,4 +108,3 @@
     }
 
 </table>
-</div>

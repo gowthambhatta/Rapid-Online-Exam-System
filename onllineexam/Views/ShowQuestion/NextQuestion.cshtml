@@ -1,7 +1,7 @@
 ﻿@model onllineexam.Models.QuestionData
 
 @{
-    ViewBag.Title = "";
+    ViewBag.Title = "Rapid Test";
 }
 <br>
 <h1></h1>
@@ -13,7 +13,7 @@
         <div class="seconds"></div>
     </h1>
 </div>
-@*@Session["timmer"]=*@
+
 <script>
     function getTimeRemaining(endtime) {
         var t = Date.parse(endtime) - Date.parse(new Date());
@@ -85,137 +85,64 @@
     }
 
     timer = setInterval(showRemaining, 000);</script>
-@*<meta http-equiv="refresh" content="30;url='@Url.Content("~//Home//Index")'" />
-
-<script>
-    //set minutes
-    var mins = 1;
-
-    //calculate the seconds
-    var secs = mins * 60;
-
-    //countdown function is evoked when page is loaded
-    function countdown() {
-        setTimeout('Decrement()', 60);
-    }
-
-    //Decrement function decrement the value.
-    function Decrement() {
-        if (document.getElementById) {
-            minutes = document.getElementById("minutes");
-            seconds = document.getElementById("seconds");
-
-            //if less than a minute remaining
-            //Display only seconds value.
-            if (seconds < 59) {
-                seconds.value = secs;
-            }
-
-            //Display both minutes and seconds
-            //getminutes and getseconds is used to
-            //get minutes and seconds
-            else {
-                minutes.value = getminutes();
-                seconds.value = getseconds();
-            }
-            //when less than a minute remaining
-            //colour of the minutes and seconds
-            //changes to red
-            if (mins < 1) {
-                minutes.style.color = "red";
-                seconds.style.color = "red";
-            }
-            //if seconds becomes zero,
-            //then page alert time up
-            if (mins < 0) {
-                alert('time up');
-                minutes.value = 0;
-                ////seconds.value = 0;
-                //window.location.href= Url.Action("Login", "User");
-            }
-            //if seconds > 0 then seconds is decremented
-            else {
-                secs--;
-                setTimeout('Decrement()', 1000);
-            }
-        }
-    }
-
-    function getminutes() {
-        //minutes is seconds divided by 60, rounded down
-        mins = Math.floor(secs / 60);
-        return mins;
-    }
-
-    function getseconds() {
-        //take minutes remaining (as seconds) away
-        //from total seconds remaining
-        return secs - Math.round(mins * 60);
-    }
-</script>*@
-<p>Exam ID</p>@Session["exid"]
 
 <div>
     @using (Html.BeginForm("NextQuestion", "ShowQuestion", FormMethod.Post))
     {
         @Html.AntiForgeryToken()
-        <div>
-            @Html.ValidationMessageFor(m => m.selectedvalue, "", new { @class = "text-danger" })
+    <div>
+        @Html.ValidationMessageFor(m => m.selectedvalue, "", new { @class = "text-danger" })
+        @Session["message"]
+        <hr />
+        <dl class="dl-horizontal">
+            <b>
+                <dd>
+                    @Html.LabelFor(model => model.Level, "Level")
+                    @Html.DisplayFor(model => model.Level)
+                </dd>
+            </b>
+            <dt>
+                @ViewBag.questionNo
 
-            <hr />
-            <dl class="dl-horizontal">
-                <b>
-                    <dd>
-                        @Html.LabelFor(model => model.Level, "Level")
-                        @Html.DisplayFor(model => model.Level)
-                    </dd>
-                    <dd>
-                        @Html.LabelFor(model => model.Question_number, "Current Question")
-                        @Html.DisplayFor(model => model.Question_number)
-                    </dd>
-                </b>
-                <dt>
-                    @ViewBag.questionNo
-
-                </dt>
-                <dd>
-                    @Html.DisplayFor(model => model.Question)
-                </dd>
-                <dt>
-                    @Html.RadioButtonFor(model => model.selectedvalue, "1")
-                </dt>
-                <dd>
-                    @Html.DisplayFor(model => model.option1)
-                </dd>
-                <dt>
-                    @Html.RadioButtonFor(model => model.selectedvalue, "2")
-                </dt>
-                <dd>
-                    @Html.DisplayFor(model => model.option2)
-                </dd>
-                <dt>
-                    @Html.RadioButtonFor(model => model.selectedvalue, "3")
-                </dt>
-                <dd>
-                    @Html.DisplayFor(model => model.option3)
-                </dd>
-                <dt>
-                    @Html.RadioButtonFor(model => model.selectedvalue, "4")
-                </dt>
-                <dd>
-                    @Html.DisplayFor(model => model.option4)
-                </dd>
-                @Html.HiddenFor(m => m.option1)
-                @Html.HiddenFor(m => m.option2)
-                @Html.HiddenFor(m => m.option3)
-                @Html.HiddenFor(m => m.option4)
-                @Html.HiddenFor(m => m.Question_number)
-                @Html.HiddenFor(m => m.Question)
-                @Html.HiddenFor(m => m.testid)
-                @Html.HiddenFor(m => m.correct_option)
-                @Html.HiddenFor(m => m.Level)
-            </dl>
-        </div>
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Question)
+            </dd>
+            <dt>
+                @Html.RadioButtonFor(model => model.selectedvalue, "1")
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.option1)
+            </dd>
+            <dt>
+                @Html.RadioButtonFor(model => model.selectedvalue, "2")
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.option2)
+            </dd>
+            <dt>
+                @Html.RadioButtonFor(model => model.selectedvalue, "3")
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.option3)
+            </dd>
+            <dt>
+                @Html.RadioButtonFor(model => model.selectedvalue, "4")
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.option4)
+            </dd>
+            @Html.HiddenFor(m => m.option1)
+            @Html.HiddenFor(m => m.option2)
+            @Html.HiddenFor(m => m.option3)
+            @Html.HiddenFor(m => m.option4)
+            @Html.HiddenFor(m => m.Question_number)
+            @Html.HiddenFor(m => m.Question)
+            @Html.HiddenFor(m => m.testid)
+            @Html.HiddenFor(m => m.correct_option)
+            @Html.HiddenFor(m => m.Level)
+        </dl>
+    </div>
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">

@@ -12,6 +12,7 @@ namespace onllineexam.Controllers
     {
         OnlineExamEntities db = new OnlineExamEntities();
         // GET: AddExam
+        [HandleError]
         public ActionResult CreateTest()
         {
             ViewBag.sub_id = new SelectList(db.Subjects, "Sub_ID", "sub_Name");
@@ -23,6 +24,7 @@ namespace onllineexam.Controllers
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
+        [HandleError]
         [ValidateAntiForgeryToken]
         public ActionResult CreateTest([Bind(Include = "Test_id,Test_name,Teach_id,Test_date,Test_time,sub_id")] TestGenerator testGenerator)
         {
@@ -40,6 +42,7 @@ namespace onllineexam.Controllers
             ViewBag.Test_id = new SelectList(db.QuestionFiles, "testid", "subname", testGenerator.Test_id);
             return View();
         }
+        [HandleError]
         public ActionResult SelectTest()
         {
             var name = db.TestGenerators.ToList();
@@ -53,6 +56,7 @@ namespace onllineexam.Controllers
             return View(drp);
         }
         [HttpPost]
+        [HandleError]
         public void SetFromDrp(int val)
         {
             Session["exid"]=val;

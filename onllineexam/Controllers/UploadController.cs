@@ -17,23 +17,29 @@ namespace onllineexam.Controllers
         OnlineExamEntities db = new OnlineExamEntities();
 
         // GET: Upload
+        [HandleError]
         public ActionResult Index(DrpList drp)
         {
             ViewBag.drpData = drp;
             Session["exid"] = drp.examid;
+            
             return RedirectToAction("Upload");
         }
+        [HandleError]
         public ActionResult Upload(FormCollection formCollection)
         {
             var usersList = new List<QuestionData>();
+            
             if (Request != null)
             {
                 HttpPostedFileBase file = Request.Files["UploadedFile"];
+                TempData["uploadstatus"] = "false";
                 if ((file != null) && (file.ContentLength > 0) && !string.IsNullOrEmpty(file.FileName))
                 {
                     string fileName = file.FileName;
                     string fileContentType = file.ContentType;
                     byte[] fileBytes = new byte[file.ContentLength];
+                    TempData["uploadstatus"] = "true";
                     var data = file.InputStream.Read(fileBytes, 0, Convert.ToInt32(file.ContentLength));
                     using (var package = new ExcelPackage(file.InputStream))
                     {
@@ -68,7 +74,7 @@ namespace onllineexam.Controllers
                 db.QuestionDatas.Add(item);
             }
             db.SaveChanges();
-
+            
             return View();
         }
     }

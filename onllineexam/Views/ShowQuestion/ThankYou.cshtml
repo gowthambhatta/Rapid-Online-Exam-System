@@ -3,17 +3,19 @@
 }
 @if (TempData["status"].ToString() == "fail")
 {
-    <body class="container-fluid" style="background-color:aqua;">
-        <div>
-            <h1 class="text-danger text-center">@Session["message"]</h1>
-        </div>
-    </body>
+<body class="container-fluid" style="background-color:aqua;">
+    <div>
+        <h1 class="text-danger text-center">@Session["message"]</h1>
+    </div>
+    @Html.ActionLink("Home", "Index", "Home", htmlAttributes: new { @class = "btn-services" })
+</body>
 }
 else
 {
-    <body class="container-fluid" style="background-color:greenyellow;">
+    <body class="container-fluid" style="background-color:green;">
         <div>
             <h1 class="text-center">@Session["message"]</h1>
         </div>
+        @Html.ActionLink("Home","Index","Home",htmlAttributes: new { @class = "btn-services" })
     </body>
 }

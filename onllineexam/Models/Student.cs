@@ -50,7 +50,8 @@ namespace onllineexam.Models
         public string Qualification { get; set; }
         [Display(Name = "Year Of Completion")]
         [Required]
-        [DataType(DataType.Date)]
+        [MaxLength(4)]
+        [MinLength(4)]
         public string Year_of_comp { get; set; }
     
         public virtual Login Login { get; set; }

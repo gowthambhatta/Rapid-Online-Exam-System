@@ -27,6 +27,7 @@ namespace onllineexam.Controllers
         [HttpPost]
         public void SetFromDrp(int val)
         {
+            Session["exid"] = val;
             ViewBag.drpVal = val;
       
         }

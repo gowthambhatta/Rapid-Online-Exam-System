@@ -9,6 +9,7 @@ namespace onllineexam.Controllers
     [HandleError]
     public class HomeController : Controller
     {
+        [HandleError]
         public ActionResult Index()
         {
             return View();
