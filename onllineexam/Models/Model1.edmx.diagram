@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="21193e859796410a9c4e94016c08f701" Name="Diagram1">
+        <EntityTypeShape EntityType="OnlineExamModel.Login" Width="1.5" PointX="1.5" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineExamModel.QuestionData" Width="1.5" PointX="6" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineExamModel.QuestionFile" Width="1.5" PointX="5.25" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineExamModel.Result" Width="1.5" PointX="3" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineExamModel.Student" Width="1.5" PointX="0.75" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineExamModel.Subject" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineExamModel.Teacher" Width="1.5" PointX="0.75" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineExamModel.TestAccessor" Width="1.5" PointX="6" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineExamModel.TestGenerator" Width="1.5" PointX="3.25" PointY="1.625" IsExpanded="true" />
+        <AssociationConnector Association="OnlineExamModel.FK__Student__Stu_Ema__1273C1CD" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineExamModel.FK__Teacher__Teach_E__15502E78" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineExamModel.FK__QuestionD__testi__4316F928" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineExamModel.FK__QuestionF__testi__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineExamModel.FK__Result__Stu_id__3B75D760" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineExamModel.FK__Result__sub_id__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineExamModel.FK__Result__testid__3D5E1FD2" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineExamModel.FK__TestAcces__Stu_i__37A5467C" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineExamModel.FK__TestAcces__sub_i__38996AB5" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineExamModel.FK__TestGener__sub_i__33D4B598" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineExamModel.FK__TestGener__Teach__32E0915F" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineExamModel.FK__TestAcces__Test___36B12243" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

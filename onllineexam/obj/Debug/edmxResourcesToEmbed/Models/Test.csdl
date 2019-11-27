@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ExamModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Login">
+    <Key>
+      <PropertyRef Name="UID" />
+    </Key>
+    <Property Name="UID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Email" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Type" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Students" Relationship="ExamModel.FK__Student__Stu_Ema__1367E606" FromRole="Login" ToRole="Student" />
+    <NavigationProperty Name="Teachers" Relationship="ExamModel.FK__Teacher__Teach_E__164452B1" FromRole="Login" ToRole="Teacher" />
+  </EntityType>
+  <EntityType Name="Result">
+    <Key>
+      <PropertyRef Name="ResId" />
+    </Key>
+    <Property Name="ResId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Stu_id" Type="Int32" />
+    <Property Name="sub_id" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="testid" Type="Int32" />
+    <Property Name="score1" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="score2" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="score3" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Student" Relationship="Self.FK__Result__Stu_id__24927208" FromRole="Result" ToRole="Student" />
+    <NavigationProperty Name="Subject" Relationship="Self.FK__Result__sub_id__25869641" FromRole="Result" ToRole="Subject" />
+    <NavigationProperty Name="TestGenerator" Relationship="Self.FK__Result__testid__267ABA7A" FromRole="Result" ToRole="TestGenerator" />
+  </EntityType>
+  <EntityType Name="Student">
+    <Key>
+      <PropertyRef Name="Stu_ID" />
+    </Key>
+    <Property Name="Stu_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="F_Name" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="L_Name" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Stu_Email" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Phone" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="City" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DOB" Type="DateTime" Precision="0" />
+    <Property Name="State" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Qualification" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Year_of_comp" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Results" Relationship="Self.FK__Result__Stu_id__24927208" FromRole="Student" ToRole="Result" />
+    <NavigationProperty Name="TestAccessors" Relationship="Self.FK__TestAcces__Stu_i__20C1E124" FromRole="Student" ToRole="TestAccessor" />
+    <NavigationProperty Name="Login" Relationship="ExamModel.FK__Student__Stu_Ema__1367E606" FromRole="Student" ToRole="Login" />
+  </EntityType>
+  <EntityType Name="Subject">
+    <Key>
+      <PropertyRef Name="Sub_ID" />
+    </Key>
+    <Property Name="Sub_ID" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="sub_Name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Results" Relationship="Self.FK__Result__sub_id__25869641" FromRole="Subject" ToRole="Result" />
+    <NavigationProperty Name="TestAccessors" Relationship="Self.FK__TestAcces__sub_i__21B6055D" FromRole="Subject" ToRole="TestAccessor" />
+    <NavigationProperty Name="TestGenerators" Relationship="Self.FK__TestGener__sub_i__1CF15040" FromRole="Subject" ToRole="TestGenerator" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Teacher">
+    <Key>
+      <PropertyRef Name="TeacherID" />
+    </Key>
+    <Property Name="TeacherID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Teach_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Teach_contact" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Teach_Email" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TestGenerators" Relationship="Self.FK__TestGener__Teach__1BFD2C07" FromRole="Teacher" ToRole="TestGenerator" />
+    <NavigationProperty Name="Login" Relationship="ExamModel.FK__Teacher__Teach_E__164452B1" FromRole="Teacher" ToRole="Login" />
+  </EntityType>
+  <EntityType Name="TestAccessor">
+    <Key>
+      <PropertyRef Name="Test_id" />
+      <PropertyRef Name="Stu_id" />
+    </Key>
+    <Property Name="Test_id" Type="Int32" Nullable="false" />
+    <Property Name="Stu_id" Type="Int32" Nullable="false" />
+    <Property Name="sub_id" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Student" Relationship="Self.FK__TestAcces__Stu_i__20C1E124" FromRole="TestAccessor" ToRole="Student" />
+    <NavigationProperty Name="Subject" Relationship="Self.FK__TestAcces__sub_i__21B6055D" FromRole="TestAccessor" ToRole="Subject" />
+    <NavigationProperty Name="TestGenerator" Relationship="Self.FK__TestAcces__Test___1FCDBCEB" FromRole="TestAccessor" ToRole="TestGenerator" />
+  </EntityType>
+  <EntityType Name="TestGenerator">
+    <Key>
+      <PropertyRef Name="Test_id" />
+    </Key>
+    <Property Name="Test_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Test_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Teach_id" Type="Int32" />
+    <Property Name="sub_id" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Results" Relationship="Self.FK__Result__testid__267ABA7A" FromRole="TestGenerator" ToRole="Result" />
+    <NavigationProperty Name="Subject" Relationship="Self.FK__TestGener__sub_i__1CF15040" FromRole="TestGenerator" ToRole="Subject" />
+    <NavigationProperty Name="Teacher" Relationship="Self.FK__TestGener__Teach__1BFD2C07" FromRole="TestGenerator" ToRole="Teacher" />
+    <NavigationProperty Name="TestAccessors" Relationship="Self.FK__TestAcces__Test___1FCDBCEB" FromRole="TestGenerator" ToRole="TestAccessor" />
+    <NavigationProperty Name="Questionfile" Relationship="ExamModel.FK__Questionf__testI__2E1BDC42" FromRole="TestGenerator" ToRole="Questionfile" />
+    <NavigationProperty Name="QuestionDatas" Relationship="ExamModel.FK__QuestionD__testi__2B3F6F97" FromRole="TestGenerator" ToRole="QuestionData" />
+  </EntityType>
+  <Association Name="FK__Result__Stu_id__24927208">
+    <End Role="Student" Type="Self.Student" Multiplicity="0..1" />
+    <End Role="Result" Type="Self.Result" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Student">
+        <PropertyRef Name="Stu_ID" />
+      </Principal>
+      <Dependent Role="Result">
+        <PropertyRef Name="Stu_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Result__sub_id__25869641">
+    <End Role="Subject" Type="Self.Subject" Multiplicity="0..1" />
+    <End Role="Result" Type="Self.Result" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Subject">
+        <PropertyRef Name="Sub_ID" />
+      </Principal>
+      <Dependent Role="Result">
+        <PropertyRef Name="sub_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Result__testid__267ABA7A">
+    <End Role="TestGenerator" Type="Self.TestGenerator" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Result" Type="Self.Result" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TestGenerator">
+        <PropertyRef Name="Test_id" />
+      </Principal>
+      <Dependent Role="Result">
+        <PropertyRef Name="testid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TestAcces__Stu_i__20C1E124">
+    <End Role="Student" Type="Self.Student" Multiplicity="1" />
+    <End Role="TestAccessor" Type="Self.TestAccessor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Student">
+        <PropertyRef Name="Stu_ID" />
+      </Principal>
+      <Dependent Role="TestAccessor">
+        <PropertyRef Name="Stu_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TestAcces__sub_i__21B6055D">
+    <End Role="Subject" Type="Self.Subject" Multiplicity="0..1" />
+    <End Role="TestAccessor" Type="Self.TestAccessor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Subject">
+        <PropertyRef Name="Sub_ID" />
+      </Principal>
+      <Dependent Role="TestAccessor">
+        <PropertyRef Name="sub_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TestGener__sub_i__1CF15040">
+    <End Role="Subject" Type="Self.Subject" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TestGenerator" Type="Self.TestGenerator" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Subject">
+        <PropertyRef Name="Sub_ID" />
+      </Principal>
+      <Dependent Role="TestGenerator">
+        <PropertyRef Name="sub_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TestGener__Teach__1BFD2C07">
+    <End Role="Teacher" Type="Self.Teacher" Multiplicity="0..1" />
+    <End Role="TestGenerator" Type="Self.TestGenerator" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Teacher">
+        <PropertyRef Name="TeacherID" />
+      </Principal>
+      <Dependent Role="TestGenerator">
+        <PropertyRef Name="Teach_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TestAcces__Test___1FCDBCEB">
+    <End Role="TestGenerator" Type="Self.TestGenerator" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TestAccessor" Type="Self.TestAccessor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TestGenerator">
+        <PropertyRef Name="Test_id" />
+      </Principal>
+      <Dependent Role="TestAccessor">
+        <PropertyRef Name="Test_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="FinalExamEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Logins" EntityType="Self.Login" />
+    <EntitySet Name="Results" EntityType="Self.Result" />
+    <EntitySet Name="Students" EntityType="Self.Student" />
+    <EntitySet Name="Subjects" EntityType="Self.Subject" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="Teachers" EntityType="Self.Teacher" />
+    <EntitySet Name="TestAccessors" EntityType="Self.TestAccessor" />
+    <EntitySet Name="TestGenerators" EntityType="Self.TestGenerator" />
+    <AssociationSet Name="FK__Result__Stu_id__24927208" Association="Self.FK__Result__Stu_id__24927208">
+      <End Role="Student" EntitySet="Students" />
+      <End Role="Result" EntitySet="Results" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Result__sub_id__25869641" Association="Self.FK__Result__sub_id__25869641">
+      <End Role="Subject" EntitySet="Subjects" />
+      <End Role="Result" EntitySet="Results" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Result__testid__267ABA7A" Association="Self.FK__Result__testid__267ABA7A">
+      <End Role="TestGenerator" EntitySet="TestGenerators" />
+      <End Role="Result" EntitySet="Results" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TestAcces__Stu_i__20C1E124" Association="Self.FK__TestAcces__Stu_i__20C1E124">
+      <End Role="Student" EntitySet="Students" />
+      <End Role="TestAccessor" EntitySet="TestAccessors" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TestAcces__sub_i__21B6055D" Association="Self.FK__TestAcces__sub_i__21B6055D">
+      <End Role="Subject" EntitySet="Subjects" />
+      <End Role="TestAccessor" EntitySet="TestAccessors" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TestGener__sub_i__1CF15040" Association="Self.FK__TestGener__sub_i__1CF15040">
+      <End Role="Subject" EntitySet="Subjects" />
+      <End Role="TestGenerator" EntitySet="TestGenerators" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TestGener__Teach__1BFD2C07" Association="Self.FK__TestGener__Teach__1BFD2C07">
+      <End Role="Teacher" EntitySet="Teachers" />
+      <End Role="TestGenerator" EntitySet="TestGenerators" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TestAcces__Test___1FCDBCEB" Association="Self.FK__TestAcces__Test___1FCDBCEB">
+      <End Role="TestGenerator" EntitySet="TestGenerators" />
+      <End Role="TestAccessor" EntitySet="TestAccessors" />
+    </AssociationSet>
+    <EntitySet Name="Questionfiles" EntityType="ExamModel.Questionfile" />
+    <AssociationSet Name="FK__Student__Stu_Ema__1367E606" Association="ExamModel.FK__Student__Stu_Ema__1367E606">
+      <End Role="Login" EntitySet="Logins" />
+      <End Role="Student" EntitySet="Students" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Teacher__Teach_E__164452B1" Association="ExamModel.FK__Teacher__Teach_E__164452B1">
+      <End Role="Login" EntitySet="Logins" />
+      <End Role="Teacher" EntitySet="Teachers" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Questionf__testI__2E1BDC42" Association="ExamModel.FK__Questionf__testI__2E1BDC42">
+      <End Role="TestGenerator" EntitySet="TestGenerators" />
+      <End Role="Questionfile" EntitySet="Questionfiles" />
+    </AssociationSet>
+    <EntitySet Name="QuestionDatas" EntityType="ExamModel.QuestionData" />
+    <AssociationSet Name="FK__QuestionD__testi__2B3F6F97" Association="ExamModel.FK__QuestionD__testi__2B3F6F97">
+      <End Role="TestGenerator" EntitySet="TestGenerators" />
+      <End Role="QuestionData" EntitySet="QuestionDatas" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Questionfile">
+    <Key>
+      <PropertyRef Name="testID" />
+    </Key>
+    <Property Name="testID" Type="Int32" Nullable="false" />
+    <Property Name="sub_name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="qfile" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="end_date" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="TestGenerator" Relationship="ExamModel.FK__Questionf__testI__2E1BDC42" FromRole="Questionfile" ToRole="TestGenerator" />
+  </EntityType>
+  <Association Name="FK__Student__Stu_Ema__1367E606">
+    <End Type="ExamModel.Login" Role="Login" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="ExamModel.Student" Role="Student" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Login">
+        <PropertyRef Name="Email" />
+      </Principal>
+      <Dependent Role="Student">
+        <PropertyRef Name="Stu_Email" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Teacher__Teach_E__164452B1">
+    <End Type="ExamModel.Login" Role="Login" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="ExamModel.Teacher" Role="Teacher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Login">
+        <PropertyRef Name="Email" />
+      </Principal>
+      <Dependent Role="Teacher">
+        <PropertyRef Name="Teach_Email" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Questionf__testI__2E1BDC42">
+    <End Type="ExamModel.TestGenerator" Role="TestGenerator" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="ExamModel.Questionfile" Role="Questionfile" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="TestGenerator">
+        <PropertyRef Name="Test_id" />
+      </Principal>
+      <Dependent Role="Questionfile">
+        <PropertyRef Name="testID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="QuestionData">
+    <Key>
+      <PropertyRef Name="testid" />
+      <PropertyRef Name="Question_number" />
+    </Key>
+    <Property Name="testid" Type="Int32" Nullable="false" />
+    <Property Name="Question_number" Type="Int64" Nullable="false" />
+    <Property Name="Question" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="option1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="option2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="option3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="option4" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="correct_option" Type="Int32" />
+    <Property Name="Level" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="TestGenerator" Relationship="ExamModel.FK__QuestionD__testi__2B3F6F97" FromRole="QuestionData" ToRole="TestGenerator" />
+  </EntityType>
+  <Association Name="FK__QuestionD__testi__2B3F6F97">
+    <End Type="ExamModel.TestGenerator" Role="TestGenerator" Multiplicity="1" />
+    <End Type="ExamModel.QuestionData" Role="QuestionData" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TestGenerator">
+        <PropertyRef Name="Test_id" />
+      </Principal>
+      <Dependent Role="QuestionData">
+        <PropertyRef Name="testid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

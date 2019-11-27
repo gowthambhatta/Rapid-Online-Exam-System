@@ -1,0 +1,63 @@
+﻿@model IEnumerable<onllineexam.Models.TestGenerator>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Test_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Test_date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Test_time)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Subject.sub_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Teacher.Teach_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.QuestionFile.subname)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Test_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Test_date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Test_time)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Subject.sub_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Teacher.Teach_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.QuestionFile.subname)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Test_id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Test_id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Test_id })
+        </td>
+    </tr>
+}
+
+</table>

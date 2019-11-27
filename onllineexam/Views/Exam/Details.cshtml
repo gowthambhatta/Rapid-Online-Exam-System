@@ -1,0 +1,66 @@
+﻿@model onllineexam.Models.TestGenerator
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TestGenerator</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Test_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Test_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Test_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Test_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Test_time)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Test_time)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Subject.sub_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Subject.sub_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Teacher.Teach_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Teacher.Teach_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QuestionFile.subname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QuestionFile.subname)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Test_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

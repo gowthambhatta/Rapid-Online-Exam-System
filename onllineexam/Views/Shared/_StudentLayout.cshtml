@@ -1,0 +1,86 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/Site.css" rel="stylesheet" />
+</head>
+<body style="background-color:khaki">
+    <header style="background-color:transparent;float:left;" id="header">
+        <div style="background-color:white; " class="container">
+            <div id="logo" class="pull-left">
+                <a href="~/Home/Index">
+                    <img src="~/Images/Project_Logo (1).png" />
+                </a>
+            </div>
+        </div>
+    </header>
+    <div style="background-color:#111;height:500px; overflow: auto;" class="col-sm-3 col-md-3 container-fluid">
+        <div class="row-fluid row content">
+            <div class="sidenav">
+
+                <ul style="color:beige;" class=" nav nav-pills nav-stacked">
+                    <li>
+                        <h4 style="color:white;"> &nbsp; &nbsp; Hello @Session["login"] !</h4>
+                    </li>
+                    <li style="color:beige;">
+                        @Html.ActionLink("View Report", "CreateTest", "AddExam")
+
+                    </li>
+                    <li style="color:beige;">
+                        @Html.ActionLink("Update Information", "Index", "QuestionView")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Report By Subject", "Result_By_Stuandsub1", "ResultA")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Report By Subject", "Result_By_Stuandsub1", "ResultA")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Report By Test", "Result_By_Stuandtest", "ResultA")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Log Off", "LogOff", "Login")
+                    </li>
+                </ul>
+                </li>
+                </ul><br>
+
+            </div>
+        </div>
+    </div>
+    @RenderBody()
+    <hr />
+    <footer id="footer">
+        <div class="container">
+
+            <div class="col-md-12">
+                <div class="copyright">
+                    &copy; Copyright <strong>Rapid </strong>
+                </div>
+                <div class="credits">
+
+                    Designed by <a href="https://lti.com/">Team 3 LTI </a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- #footer -->
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/custom")
+    @Scripts.Render("~/bundles/lib")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

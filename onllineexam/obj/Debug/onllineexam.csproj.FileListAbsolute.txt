@@ -1,0 +1,325 @@
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\onllineexam.dll.config
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\onllineexam.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\onllineexam.pdb
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\csc.exe
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\csc.exe.config
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\csc.rsp
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\csi.exe
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\csi.exe.config
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\csi.rsp
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\System.AppContext.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\System.Console.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\System.IO.Compression.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\System.IO.Pipes.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\System.Security.Claims.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\System.ValueTuple.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\System.Xml.XPath.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\vbc.exe
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\vbc.exe.config
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\vbc.rsp
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\VBCSCompiler.exe
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\Antlr3.Runtime.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\EntityFramework.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\EntityFramework.SqlServer.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\Microsoft.Owin.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\Microsoft.Owin.Security.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\Newtonsoft.Json.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\Owin.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\System.Web.Helpers.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\System.Web.Mvc.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\System.Web.Optimization.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\System.Web.Razor.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\System.Web.WebPages.Deployment.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\System.Web.WebPages.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\System.Web.WebPages.Razor.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\WebGrease.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\System.Web.Helpers.xml
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\System.Web.Mvc.xml
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\System.Web.Optimization.xml
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\System.Web.Razor.xml
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\System.Web.WebPages.xml
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\System.Web.WebPages.Deployment.xml
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\System.Web.WebPages.Razor.xml
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\Newtonsoft.Json.xml
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\Antlr3.Runtime.pdb
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\EntityFramework.xml
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\EntityFramework.SqlServer.xml
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\Microsoft.Owin.xml
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\Microsoft.Owin.Security.xml
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\obj\Debug\onllineexam.csproj.CoreCompileInputs.cache
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\obj\Debug\onllineexam.csproj.CopyComplete
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\obj\Debug\onllineexam.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\obj\Debug\onllineexam.pdb
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\obj\Debug\onllineexam.csprojAssemblyReference.cache
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\EPPlus.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\ExcelLibrary.dll
+C:\Users\pcuser\Desktop\gbk\Prtoject\onllineexam\onllineexam\bin\EPPlus.xml
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\onllineexam.dll.config
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\onllineexam.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\onllineexam.pdb
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\csc.exe
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\csc.exe.config
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\csc.rsp
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\csi.exe
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\csi.exe.config
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\csi.rsp
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\System.AppContext.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\System.Console.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\System.IO.Compression.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\System.IO.Pipes.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\System.Security.Claims.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\System.ValueTuple.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\System.Xml.XPath.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\vbc.exe
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\vbc.exe.config
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\vbc.rsp
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\VBCSCompiler.exe
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\Antlr3.Runtime.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\EntityFramework.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\EntityFramework.SqlServer.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\EPPlus.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\ExcelLibrary.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\Microsoft.Owin.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\Microsoft.Owin.Security.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\Newtonsoft.Json.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\Owin.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\System.Web.Helpers.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\System.Web.Mvc.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\System.Web.Optimization.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\System.Web.Razor.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\System.Web.WebPages.Deployment.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\System.Web.WebPages.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\System.Web.WebPages.Razor.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\WebGrease.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\EntityFramework.xml
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\EntityFramework.SqlServer.xml
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\EPPlus.xml
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\System.Web.Helpers.xml
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\System.Web.Mvc.xml
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\System.Web.Optimization.xml
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\System.Web.Razor.xml
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\System.Web.WebPages.xml
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\System.Web.WebPages.Deployment.xml
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\System.Web.WebPages.Razor.xml
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\Newtonsoft.Json.xml
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\Antlr3.Runtime.pdb
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\Microsoft.Owin.xml
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\Microsoft.Owin.Security.xml
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\obj\Debug\onllineexam.csprojAssemblyReference.cache
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\obj\Debug\onllineexam.csproj.CoreCompileInputs.cache
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\obj\Debug\onllineexam.csproj.CopyComplete
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\obj\Debug\onllineexam.dll
+C:\Users\pcuser\Desktop\gbk\.Net PPT_LTI\onllineexam\onllineexam\obj\Debug\onllineexam.pdb
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\onllineexam.dll.config
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\onllineexam.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\onllineexam.pdb
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\csc.exe
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\csc.exe.config
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\csc.rsp
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\csi.exe
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\csi.exe.config
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\csi.rsp
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\System.AppContext.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\System.Console.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\System.IO.Compression.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\System.IO.Pipes.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\System.Security.Claims.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\System.ValueTuple.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\System.Xml.XPath.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\vbc.exe
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\vbc.exe.config
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\vbc.rsp
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\VBCSCompiler.exe
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\Antlr3.Runtime.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\EntityFramework.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\EntityFramework.SqlServer.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\EPPlus.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\ExcelLibrary.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\Microsoft.Owin.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\Microsoft.Owin.Security.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\Newtonsoft.Json.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\Owin.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\System.Web.Helpers.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\System.Web.Mvc.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\System.Web.Optimization.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\System.Web.Razor.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\System.Web.WebPages.Deployment.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\System.Web.WebPages.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\System.Web.WebPages.Razor.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\WebGrease.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\EntityFramework.xml
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\EntityFramework.SqlServer.xml
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\EPPlus.xml
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\System.Web.Helpers.xml
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\System.Web.Mvc.xml
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\System.Web.Optimization.xml
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\System.Web.Razor.xml
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\System.Web.WebPages.xml
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\System.Web.WebPages.Deployment.xml
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\System.Web.WebPages.Razor.xml
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\Newtonsoft.Json.xml
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\Antlr3.Runtime.pdb
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\Microsoft.Owin.xml
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\Microsoft.Owin.Security.xml
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\obj\Debug\onllineexam.csproj.CoreCompileInputs.cache
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\obj\Debug\onllineexam.csproj.CopyComplete
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\obj\Debug\onllineexam.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\obj\Debug\onllineexam.pdb
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\bin\Rotativa.dll
+C:\Users\pcuser\Desktop\gbk\ado\onllineexam\onllineexam\obj\Debug\onllineexam.csprojAssemblyReference.cache

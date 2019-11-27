@@ -1,0 +1,72 @@
+﻿@model onllineexam.Models.TestGenerator
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>TestGenerator</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Test_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Test_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Test_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Test_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Test_time)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Test_time)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Subject.sub_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Subject.sub_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Teacher.Teach_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Teacher.Teach_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QuestionFile.subname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QuestionFile.subname)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

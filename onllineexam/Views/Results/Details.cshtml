@@ -1,0 +1,74 @@
+﻿@model onllineexam.Models.Result
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Result</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.score1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.score1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.score2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.score2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.score3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.score3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Student.F_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Student.F_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Subject.sub_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Subject.sub_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TestGenerator.Test_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TestGenerator.Test_name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ResId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

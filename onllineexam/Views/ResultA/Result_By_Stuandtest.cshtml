@@ -1,0 +1,78 @@
+﻿@model IEnumerable<onllineexam.Models.Result_By_stu_and_test_Result>
+
+@{
+    ViewBag.Title = "Result";
+}
+
+<h2>Results</h2>
+
+@*<p>
+    @Html.ActionLink("Create New", "Create")
+</p>*@
+<p>
+    @Html.ActionLink("Convert View To PDF", "PrintViewToPdfST")
+</p>
+<table border="1" class="table table-responsive table-hover table-striped ">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.F_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.L_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Test_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sub_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.score1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.score2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.score3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.F_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.L_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Test_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sub_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.score1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.score2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.score3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Status)
+        </td>
+        @*<td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ResId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ResId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ResId })
+        </td>*@
+    </tr>
+}
+
+</table>

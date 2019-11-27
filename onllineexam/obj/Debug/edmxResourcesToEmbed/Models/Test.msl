@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ExamModelStoreContainer" CdmEntityContainer="FinalExamEntities">
+    <EntitySetMapping Name="Logins">
+      <EntityTypeMapping TypeName="ExamModel.Login">
+        <MappingFragment StoreEntitySet="Login">
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Results">
+      <EntityTypeMapping TypeName="ExamModel.Result">
+        <MappingFragment StoreEntitySet="Result">
+          <ScalarProperty Name="ResId" ColumnName="ResId" />
+          <ScalarProperty Name="Stu_id" ColumnName="Stu_id" />
+          <ScalarProperty Name="sub_id" ColumnName="sub_id" />
+          <ScalarProperty Name="testid" ColumnName="testid" />
+          <ScalarProperty Name="score1" ColumnName="score1" />
+          <ScalarProperty Name="score2" ColumnName="score2" />
+          <ScalarProperty Name="score3" ColumnName="score3" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Students">
+      <EntityTypeMapping TypeName="ExamModel.Student">
+        <MappingFragment StoreEntitySet="Student">
+          <ScalarProperty Name="Stu_ID" ColumnName="Stu_ID" />
+          <ScalarProperty Name="F_Name" ColumnName="F_Name" />
+          <ScalarProperty Name="L_Name" ColumnName="L_Name" />
+          <ScalarProperty Name="Stu_Email" ColumnName="Stu_Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Qualification" ColumnName="Qualification" />
+          <ScalarProperty Name="Year_of_comp" ColumnName="Year_of_comp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Subjects">
+      <EntityTypeMapping TypeName="ExamModel.Subject">
+        <MappingFragment StoreEntitySet="Subject">
+          <ScalarProperty Name="Sub_ID" ColumnName="Sub_ID" />
+          <ScalarProperty Name="sub_Name" ColumnName="sub_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Teachers">
+      <EntityTypeMapping TypeName="ExamModel.Teacher">
+        <MappingFragment StoreEntitySet="Teacher">
+          <ScalarProperty Name="TeacherID" ColumnName="TeacherID" />
+          <ScalarProperty Name="Teach_Name" ColumnName="Teach_Name" />
+          <ScalarProperty Name="Teach_contact" ColumnName="Teach_contact" />
+          <ScalarProperty Name="Teach_Email" ColumnName="Teach_Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TestAccessors">
+      <EntityTypeMapping TypeName="ExamModel.TestAccessor">
+        <MappingFragment StoreEntitySet="TestAccessor">
+          <ScalarProperty Name="Test_id" ColumnName="Test_id" />
+          <ScalarProperty Name="Stu_id" ColumnName="Stu_id" />
+          <ScalarProperty Name="sub_id" ColumnName="sub_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TestGenerators">
+      <EntityTypeMapping TypeName="ExamModel.TestGenerator">
+        <MappingFragment StoreEntitySet="TestGenerator">
+          <ScalarProperty Name="Test_id" ColumnName="Test_id" />
+          <ScalarProperty Name="Test_name" ColumnName="Test_name" />
+          <ScalarProperty Name="Teach_id" ColumnName="Teach_id" />
+          <ScalarProperty Name="sub_id" ColumnName="sub_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Questionfiles">
+      <EntityTypeMapping TypeName="ExamModel.Questionfile">
+        <MappingFragment StoreEntitySet="Questionfile">
+          <ScalarProperty Name="end_date" ColumnName="end_date" />
+          <ScalarProperty Name="qfile" ColumnName="qfile" />
+          <ScalarProperty Name="sub_name" ColumnName="sub_name" />
+          <ScalarProperty Name="testID" ColumnName="testID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QuestionDatas">
+      <EntityTypeMapping TypeName="ExamModel.QuestionData">
+        <MappingFragment StoreEntitySet="QuestionData">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="correct_option" ColumnName="correct_option" />
+          <ScalarProperty Name="option4" ColumnName="option4" />
+          <ScalarProperty Name="option3" ColumnName="option3" />
+          <ScalarProperty Name="option2" ColumnName="option2" />
+          <ScalarProperty Name="option1" ColumnName="option1" />
+          <ScalarProperty Name="Question" ColumnName="Question" />
+          <ScalarProperty Name="Question_number" ColumnName="Question_number" />
+          <ScalarProperty Name="testid" ColumnName="testid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

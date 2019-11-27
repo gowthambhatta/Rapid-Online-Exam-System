@@ -1,0 +1,29 @@
+﻿@if (ViewBag.percent > 65)
+{
+    <style>
+        body {
+            background-color: #32a84e;
+          
+        }
+    </style>
+    <h1 class="text-center">Congratulations</h1>
+
+}
+else
+{
+    <style>
+        body {
+            background-color: #17b9c2;
+            align-content:center;
+       }
+    </style>
+    <h1 class="text-center">Better Luck Next Time</h1>
+}
+<div class="row">
+    <div class="col-xs-12">
+        <div class="center-block well" style="width: 240px">
+            <span>You have Scored @ViewBag.percent% </span><br/>
+            <span>@Session["correctAns"] Right Answer/s </span>
+        </div>
+    </div>
+</div>

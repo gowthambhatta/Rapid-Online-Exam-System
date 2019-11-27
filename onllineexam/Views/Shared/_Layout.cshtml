@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title Online Exam System</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/Site.css" rel="stylesheet" />
+</head>
+
+@*@Html.Partial("_LoginPartial")*@
+<body data-target="scroll">
+    <div id="preloader"></div>
+    <div class="container-fluid">
+        @RenderBody()
+        <hr />
+        <footer id="footer">
+            <div class="container">
+               
+                    <div class="col-md-12">
+                        <div class="copyright">
+                            &copy; Copyright <strong>Rapid </strong>
+                        </div>
+                        <div class="credits">
+
+                            Designed by <a href="https://lti.com/">Team 3 LTI </a>
+                        </div>
+                    </div>
+                 
+            </div>
+        </footer>
+        <!-- #footer -->
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/custom")
+    @Scripts.Render("~/bundles/lib")
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>

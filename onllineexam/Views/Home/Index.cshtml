@@ -1,0 +1,56 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<section id="hero">
+   
+    <div class="hero-container">
+        @if (Session["login"] != null)
+        {
+        <span class="actions" style="float:right;margin:0px;padding:0px;">
+            @*@Html.ActionLink("Hello " + Session["login"], "Index", "Home", routeValues: null, htmlAttributes: new { title = "Manage", @class = "btn-services" })*@
+            @*<a href="javascript:document.getElementById('logoutForm').submit()">Log off<span class="glyphicon glyphicon-log-out"></span></a>*@
+            @Html.ActionLink("LogOff ", "LogOff", "Login", routeValues: null, htmlAttributes: new { @class = "btn-services" })
+        </span>
+        }
+        <br />
+        <div class="wow fadeIn">
+
+            <div class="hero-logo">
+
+                <img src="~/Images/Project_Logo (1).png" />
+
+            </div>
+            <h1>Online Exam</h1>
+            <h2><span class="rotating">The best way to predict the future is to create it,Trust yourself - you know more than you think you do ,Nothing is impossible - The word itself says ‘I’m Possible’,</span></h2>
+            @if (Session["student"] != null)
+            {
+            <div class="actions">
+                @Html.ActionLink(" Take Test", "Index", "SelectExam", routeValues: null, htmlAttributes: new { id = "registerLink", @class = "btn-get-started " })
+                @Html.ActionLink(" Student DashBoard", "Index", "StudentAcess", routeValues: null, htmlAttributes: new { id = "registerLink", @class = "btn-get-started " })
+                @*<a href="#about" class="btn-get-started">Login</a>
+        <a href="#services" class="btn-services">Signup</a>*@
+            </div>
+            }
+            else if (Session["Teacher"] != null)
+            {
+                <div class="actions">
+                    @Html.ActionLink(" Teacher DashBoard", "Index", "TeacherAccess", routeValues: null, htmlAttributes: new { id = "registerLink", @class = "btn-get-started " })
+                    @*@Html.ActionLink(" View Report", "Index", "Results", routeValues: null, htmlAttributes: new { id = "loginLink", @class = "btn-services " })*@
+                    @*<a href="#about" class="btn-get-started">Login</a>
+                <a href="#services" class="btn-services">Signup</a>*@
+                </div>
+            }
+            else
+            {
+                <div class="actions">
+
+                    @Html.ActionLink(" Register", "Sign_Up", "Login", routeValues: null, htmlAttributes: new { id = "registerLink", @class = "btn-get-started " })
+                    @Html.ActionLink(" Login", "Login", "Login", routeValues: null, htmlAttributes: new { id = "loginLink", @class = "btn-services " })
+                    @*<a href="#about" class="btn-get-started">Login</a>
+                <a href="#services" class="btn-services">Signup</a>*@
+                </div>
+            }
+        </div>
+    </div>
+</section>

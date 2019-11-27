@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="OnlineExamModelStoreContainer" CdmEntityContainer="OnlineExamEntities">
+    <EntitySetMapping Name="Logins">
+      <EntityTypeMapping TypeName="OnlineExamModel.Login">
+        <MappingFragment StoreEntitySet="Login">
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QuestionDatas">
+      <EntityTypeMapping TypeName="OnlineExamModel.QuestionData">
+        <MappingFragment StoreEntitySet="QuestionData">
+          <ScalarProperty Name="testid" ColumnName="testid" />
+          <ScalarProperty Name="Question_number" ColumnName="Question_number" />
+          <ScalarProperty Name="Question" ColumnName="Question" />
+          <ScalarProperty Name="option1" ColumnName="option1" />
+          <ScalarProperty Name="option2" ColumnName="option2" />
+          <ScalarProperty Name="option3" ColumnName="option3" />
+          <ScalarProperty Name="option4" ColumnName="option4" />
+          <ScalarProperty Name="correct_option" ColumnName="correct_option" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QuestionFiles">
+      <EntityTypeMapping TypeName="OnlineExamModel.QuestionFile">
+        <MappingFragment StoreEntitySet="QuestionFile">
+          <ScalarProperty Name="testid" ColumnName="testid" />
+          <ScalarProperty Name="subname" ColumnName="subname" />
+          <ScalarProperty Name="Question_file" ColumnName="Question_file" />
+          <ScalarProperty Name="end_date" ColumnName="end_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Results">
+      <EntityTypeMapping TypeName="OnlineExamModel.Result">
+        <MappingFragment StoreEntitySet="Result">
+          <ScalarProperty Name="ResId" ColumnName="ResId" />
+          <ScalarProperty Name="Stu_id" ColumnName="Stu_id" />
+          <ScalarProperty Name="sub_id" ColumnName="sub_id" />
+          <ScalarProperty Name="testid" ColumnName="testid" />
+          <ScalarProperty Name="score1" ColumnName="score1" />
+          <ScalarProperty Name="score2" ColumnName="score2" />
+          <ScalarProperty Name="score3" ColumnName="score3" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Students">
+      <EntityTypeMapping TypeName="OnlineExamModel.Student">
+        <MappingFragment StoreEntitySet="Student">
+          <ScalarProperty Name="Stu_ID" ColumnName="Stu_ID" />
+          <ScalarProperty Name="F_Name" ColumnName="F_Name" />
+          <ScalarProperty Name="L_Name" ColumnName="L_Name" />
+          <ScalarProperty Name="Stu_Email" ColumnName="Stu_Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Qualification" ColumnName="Qualification" />
+          <ScalarProperty Name="Year_of_comp" ColumnName="Year_of_comp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Subjects">
+      <EntityTypeMapping TypeName="OnlineExamModel.Subject">
+        <MappingFragment StoreEntitySet="Subject">
+          <ScalarProperty Name="Sub_ID" ColumnName="Sub_ID" />
+          <ScalarProperty Name="sub_Name" ColumnName="sub_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Teachers">
+      <EntityTypeMapping TypeName="OnlineExamModel.Teacher">
+        <MappingFragment StoreEntitySet="Teacher">
+          <ScalarProperty Name="TeacherID" ColumnName="TeacherID" />
+          <ScalarProperty Name="Teach_Name" ColumnName="Teach_Name" />
+          <ScalarProperty Name="Teach_contact" ColumnName="Teach_contact" />
+          <ScalarProperty Name="Teach_Email" ColumnName="Teach_Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TestAccessors">
+      <EntityTypeMapping TypeName="OnlineExamModel.TestAccessor">
+        <MappingFragment StoreEntitySet="TestAccessor">
+          <ScalarProperty Name="Test_id" ColumnName="Test_id" />
+          <ScalarProperty Name="Stu_id" ColumnName="Stu_id" />
+          <ScalarProperty Name="sub_id" ColumnName="sub_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TestGenerators">
+      <EntityTypeMapping TypeName="OnlineExamModel.TestGenerator">
+        <MappingFragment StoreEntitySet="TestGenerator">
+          <ScalarProperty Name="Test_id" ColumnName="Test_id" />
+          <ScalarProperty Name="Test_name" ColumnName="Test_name" />
+          <ScalarProperty Name="Teach_id" ColumnName="Teach_id" />
+          <ScalarProperty Name="Test_date" ColumnName="Test_date" />
+          <ScalarProperty Name="Test_time" ColumnName="Test_time" />
+          <ScalarProperty Name="sub_id" ColumnName="sub_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="NumOfQuest" FunctionName="OnlineExamModel.Store.NumOfQuest" />
+    <FunctionImportMapping FunctionImportName="CheckLevel" FunctionName="OnlineExamModel.Store.CheckLevel" />
+    <FunctionImportMapping FunctionImportName="NumOfQuestByLevel" FunctionName="OnlineExamModel.Store.NumOfQuestByLevel" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="OnlineExamModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="OnlineExamModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="OnlineExamModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OnlineExamModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="OnlineExamModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OnlineExamModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="OnlineExamModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="OnlineExamModel.Store.sp_upgraddiagrams" />
+    <FunctionImportMapping FunctionImportName="Result_By_stu_and_sub" FunctionName="OnlineExamModel.Store.Result_By_stu_and_sub">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OnlineExamModel.Result_By_stu_and_sub_Result">
+          <ScalarProperty Name="ResId" ColumnName="ResId" />
+          <ScalarProperty Name="F_Name" ColumnName="F_Name" />
+          <ScalarProperty Name="L_Name" ColumnName="L_Name" />
+          <ScalarProperty Name="Test_name" ColumnName="Test_name" />
+          <ScalarProperty Name="sub_Name" ColumnName="sub_Name" />
+          <ScalarProperty Name="score1" ColumnName="score1" />
+          <ScalarProperty Name="score2" ColumnName="score2" />
+          <ScalarProperty Name="score3" ColumnName="score3" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Result_By_stu_and_test" FunctionName="OnlineExamModel.Store.Result_By_stu_and_test">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OnlineExamModel.Result_By_stu_and_test_Result">
+          <ScalarProperty Name="ResId" ColumnName="ResId" />
+          <ScalarProperty Name="F_Name" ColumnName="F_Name" />
+          <ScalarProperty Name="L_Name" ColumnName="L_Name" />
+          <ScalarProperty Name="Test_name" ColumnName="Test_name" />
+          <ScalarProperty Name="sub_Name" ColumnName="sub_Name" />
+          <ScalarProperty Name="score1" ColumnName="score1" />
+          <ScalarProperty Name="score2" ColumnName="score2" />
+          <ScalarProperty Name="score3" ColumnName="score3" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Result_By_subject" FunctionName="OnlineExamModel.Store.Result_By_subject">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OnlineExamModel.Result_By_subject_Result">
+          <ScalarProperty Name="ResId" ColumnName="ResId" />
+          <ScalarProperty Name="F_Name" ColumnName="F_Name" />
+          <ScalarProperty Name="L_Name" ColumnName="L_Name" />
+          <ScalarProperty Name="Test_name" ColumnName="Test_name" />
+          <ScalarProperty Name="sub_Name" ColumnName="sub_Name" />
+          <ScalarProperty Name="score1" ColumnName="score1" />
+          <ScalarProperty Name="score2" ColumnName="score2" />
+          <ScalarProperty Name="score3" ColumnName="score3" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Result_By_Test" FunctionName="OnlineExamModel.Store.Result_By_Test">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OnlineExamModel.Result_By_Test_Result">
+          <ScalarProperty Name="ResId" ColumnName="ResId" />
+          <ScalarProperty Name="F_Name" ColumnName="F_Name" />
+          <ScalarProperty Name="L_Name" ColumnName="L_Name" />
+          <ScalarProperty Name="Stu_Email" ColumnName="Stu_Email" />
+          <ScalarProperty Name="Qualification" ColumnName="Qualification" />
+          <ScalarProperty Name="Year_of_comp" ColumnName="Year_of_comp" />
+          <ScalarProperty Name="testid" ColumnName="testid" />
+          <ScalarProperty Name="Test_name" ColumnName="Test_name" />
+          <ScalarProperty Name="sub_id" ColumnName="sub_id" />
+          <ScalarProperty Name="sub_Name" ColumnName="sub_Name" />
+          <ScalarProperty Name="score1" ColumnName="score1" />
+          <ScalarProperty Name="score2" ColumnName="score2" />
+          <ScalarProperty Name="score3" ColumnName="score3" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="OnlineExamModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="InsertScore1" FunctionName="OnlineExamModel.Store.InsertScore1" />
+    <FunctionImportMapping FunctionImportName="InsertScore2" FunctionName="OnlineExamModel.Store.InsertScore2" />
+    <FunctionImportMapping FunctionImportName="InsertScore3" FunctionName="OnlineExamModel.Store.InsertScore3" />
+    <FunctionImportMapping FunctionImportName="MaximumQuestnNumINLevel" FunctionName="OnlineExamModel.Store.MaximumQuestnNumINLevel" />
+  </EntityContainerMapping>
+</Mapping>
